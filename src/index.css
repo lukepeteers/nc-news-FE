@@ -55,6 +55,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.article-window {
+  width: 80%;
+  background-color: #213547;
+  color: white;
+}
+
+.article-window-img {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,3 +79,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* 
+@media (min-width: 600px) {
+  
+} */
