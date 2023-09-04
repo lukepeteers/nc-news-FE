@@ -66,9 +66,9 @@
     {
       "id": "pointer:pointer",
       "typeName": "pointer",
-      "x": 2711.1577872348203,
-      "y": 779.170453174282,
-      "lastActivityTimestamp": 1693824334236,
+      "x": -208.72504410068154,
+      "y": 1014.7180157817188,
+      "lastActivityTimestamp": 1693832495544,
       "meta": {}
     },
     {
@@ -79,8 +79,8 @@
       "typeName": "page"
     },
     {
-      "x": 579.2929756207272,
-      "y": -578.9508711270269,
+      "x": 169.208021328197,
+      "y": -727.5609836349977,
       "z": 0.379583251662481,
       "meta": {},
       "id": "camera:page:loeEyGASOm71bppTrg1ht",
@@ -89,9 +89,7 @@
     {
       "editingId": null,
       "croppingId": null,
-      "selectedIds": [
-        "shape:eR6Qicq8sUR_fV8TCQ6F5"
-      ],
+      "selectedIds": [],
       "hoveredId": null,
       "erasingIds": [],
       "hintingIds": [],
@@ -106,7 +104,7 @@
       "opacityForNextShape": 1,
       "stylesForNextShape": {
         "tldraw:geo": "rectangle",
-        "tldraw:color": "black",
+        "tldraw:color": "light-blue",
         "tldraw:arrowheadStart": "none"
       },
       "brush": null,
@@ -4544,8 +4542,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1741.7725452637,
-      "y": 975.5025354022565,
+      "x": 1944.6265954957873,
+      "y": 1618.3127725013385,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -4567,8 +4565,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1748.2804231557006,
-      "y": 1028.8505161451108,
+      "x": 2290.9808692311553,
+      "y": 1084.1743480265893,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -5241,8 +5239,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1252.4250925911533,
-      "y": 1513.3819046994681,
+      "x": 1326.190201766458,
+      "y": 1476.4993501118158,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -5598,8 +5596,8 @@
       "typeName": "shape"
     },
     {
-      "x": 1687.4066305553279,
-      "y": 926.3121681338848,
+      "x": 2569.9534724741497,
+      "y": 1555.9500643088054,
       "rotation": 0,
       "isLocked": false,
       "opacity": 1,
@@ -5657,6 +5655,98 @@
         "text": "",
         "font": "draw"
       },
+      "typeName": "shape"
+    },
+    {
+      "x": 1089.405006493061,
+      "y": 993.2537669120542,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:Vwq7NJ7-FHWTXJOlkyW3B",
+      "type": "text",
+      "props": {
+        "color": "light-blue",
+        "size": "m",
+        "w": 428.109375,
+        "text": "popularArticles, setPopularArticles",
+        "font": "draw",
+        "align": "middle",
+        "autoSize": true,
+        "scale": 1
+      },
+      "parentId": "page:loeEyGASOm71bppTrg1ht",
+      "index": "b1b",
+      "typeName": "shape"
+    },
+    {
+      "x": 1073.9616075902409,
+      "y": 1059.1154715328619,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:uas7ATk-265tDJdJddADY",
+      "type": "text",
+      "props": {
+        "color": "light-blue",
+        "size": "m",
+        "w": 390.5,
+        "text": "randomTopics, setRandomTopics",
+        "font": "draw",
+        "align": "middle",
+        "autoSize": true,
+        "scale": 1
+      },
+      "parentId": "page:loeEyGASOm71bppTrg1ht",
+      "index": "b1c",
+      "typeName": "shape"
+    },
+    {
+      "x": 2684.906229892443,
+      "y": 1701.9257086319442,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:wQ-_zdkxifnBJNsmva8DK",
+      "type": "text",
+      "props": {
+        "color": "light-blue",
+        "size": "m",
+        "w": 398.46875,
+        "text": "currentArticle, setCurrentArticle",
+        "font": "draw",
+        "align": "middle",
+        "autoSize": true,
+        "scale": 1
+      },
+      "parentId": "page:loeEyGASOm71bppTrg1ht",
+      "index": "b1d",
+      "typeName": "shape"
+    },
+    {
+      "x": 1759.5848605140188,
+      "y": 1024.8673851300418,
+      "rotation": 0,
+      "isLocked": false,
+      "opacity": 1,
+      "meta": {},
+      "id": "shape:NHXJIw-r1srs_z-oZSW7o",
+      "type": "text",
+      "props": {
+        "color": "light-blue",
+        "size": "m",
+        "w": 157.34375,
+        "text": "user, setUser",
+        "font": "draw",
+        "align": "middle",
+        "autoSize": true,
+        "scale": 1
+      },
+      "parentId": "page:loeEyGASOm71bppTrg1ht",
+      "index": "b1e",
       "typeName": "shape"
     }
   ]
