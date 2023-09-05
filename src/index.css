@@ -68,10 +68,19 @@ button:focus-visible {
 }
 
 .single-article-window {
-  width: 1000px;
+  width: 100%;
   background-color: #213547;
   color: white;
-  float: left;
+}
+
+.comments-window {
+  
+}
+
+.comments-window-content {
+  background-color:#213547;
+  color: white;
+  margin-bottom: 10px;
 }
 
 @media (prefers-color-scheme: light) {
