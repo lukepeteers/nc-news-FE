@@ -5,9 +5,9 @@ function Header() {
     return (
         <>
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/topics">Topics</Link>
-            <Link to="/articles">Articles</Link>
+            <Link to="/"><button>Home</button></Link>
+            <Link to="/topics"><button>Topics</button></Link>
+            <Link to="/articles"><button>Articles</button></Link>
         </nav>
         </>
     )

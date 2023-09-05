@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { getAllArticles } from "../utils/api";
 
 
@@ -26,7 +27,7 @@ function Articles() {
                 
                 <div className="article-window-content">
                     <img className="article-window-img"src={article_img_url}/>  
-                    <p>{title}</p>
+                    <Link to={`/articles/${topic}/${article_id}`}><p>{title}</p></Link>
                     <p>{topic}</p>
                     <p>Comments: {comment_count}</p>
                     <p>Created at {created_at} by {author}</p>
