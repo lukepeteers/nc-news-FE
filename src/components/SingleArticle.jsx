@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getArticle } from "../utils/api";
+import { getArticle, getComments } from "../utils/api";
+import Comments from "./Comments";
 
 function SingleArticle() {
     const [currentArticle, setCurrentArticle] = useState({})
+    const [comments, setComments] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const {article_id, topic} = useParams()
 
@@ -12,6 +14,12 @@ function SingleArticle() {
         getArticle(article_id)
         .then(({data}) => {
             setCurrentArticle(data)
+            
+        })
+
+        getComments(article_id)
+        .then(({data}) => {
+            setComments(data)
             setIsLoading(false)
         })
     }, []) 
@@ -20,16 +28,19 @@ function SingleArticle() {
 
     if(currentArticle.hasOwnProperty('article')) {
     return (
+        <>
         <div className="single-article-window">
             <article className="single-article-window-content">
                 <img className="single-article-window-img"src={currentArticle.article.article_img_url}/>
-                <p>{currentArticle.article.title}</p>
-                <p>{`by ${currentArticle.article.author}`}</p>
+                <section>{currentArticle.article.title}</section>
+                <section>{`by ${currentArticle.article.author}`}</section>
                 <p>{currentArticle.article.body}</p>
-                <p>{`votes: ${currentArticle.article.votes}`}</p>
-                <p>{`created at: ${currentArticle.article.created_at}`}</p>
+                <section>{`votes: ${currentArticle.article.votes}`}</section>
+                <section>{`created at: ${currentArticle.article.created_at}`}</section>
             </article>
         </div>
+        <Comments></Comments>
+        </>
     )
     }
 }
