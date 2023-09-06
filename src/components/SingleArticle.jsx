@@ -24,19 +24,19 @@ function SingleArticle() {
         })
     }, []) 
 
-    if(isLoading === true) return (<p>Loading....</p>)
+    if(isLoading) return (<p>Loading....</p>)
 
     if(currentArticle.hasOwnProperty('article')) {
     return (
         <>
         <div className="single-article-window">
             <article className="single-article-window-content">
-                <img className="single-article-window-img"src={currentArticle.article.article_img_url}/>
+                <img className="single-article-window-img"src={currentArticle.article.article_img_url} alt={`Image relating to ${currentArticle.article.topic}`}/>
                 <section>{currentArticle.article.title}</section>
                 <section>{`by ${currentArticle.article.author}`}</section>
                 <p>{currentArticle.article.body}</p>
                 <section>{`votes: ${currentArticle.article.votes}`}</section>
-                <section>{`created at: ${currentArticle.article.created_at}`}</section>
+                <section>{`created at: ${new Date(currentArticle.article.created_at).toDateString()}`}</section>
             </article>
         </div>
         <Comments></Comments>

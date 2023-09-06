@@ -11,30 +11,35 @@ function Comments() {
         setIsLoading(true)
         getComments(article_id)
         .then(({data}) => {
-            console.log(data)
             setComments(data)
             setIsLoading(false)
         })
     }, [])
 
-    if(isLoading === true) return (<p>Loading....</p>)
+    if(isLoading) return (<p>Loading....</p>)
+    if(comments.length === 0) return (
+     <>
+    <h4>Comments</h4>
+    <p>There are no comments for this article.</p>
+    </>
+    )
 
     return (
 
         <>
-             <section className="comments-window">
+             <ul className="comments-window">
                 <h4>Comments</h4>
                 {comments.map(({article_id, author, body, comment_id, created_at, votes}) => {
                     return (
-                        <div key={comment_id}className="comments-window-content">
-                            <section>{`${author} - posted at: ${created_at}`}</section>
+                        <li key={comment_id}className="comments-window-content">
+                            <section>{`${author} - posted at: ${new Date(created_at).toDateString()}`}</section>
                             <p>{body}</p>
                             <section>{`votes: ${votes}`}</section>   
-                        </div>
+                        </li>
                     )
                 })}
 
-            </section>
+            </ul>
         </>
     )
 }
