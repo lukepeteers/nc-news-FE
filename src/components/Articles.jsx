@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAllArticles } from "../utils/api";
+import FilterSort from "./FIlter";
 
 
 function Articles() {
@@ -21,7 +22,7 @@ function Articles() {
 
     return (
         <>
-        <section>Current topic: filter by, dropdown menu</section>
+        <FilterSort />
 
         {articles.map(({article_id, article_img_url, author, comment_count, title, topic, created_at, votes}) => {
             return <div key={article_id}className="article-window">
