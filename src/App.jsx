@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css'
 
 function App() {
-  const [user, setUser] = useState(0)
+  const [user, setUser] = useState('tickle122')
 
   return (
     <>
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/topics" element={<Topics />} />
         <Route path="/articles" element={<Articles />} />
-        <Route path="/articles/:topic/:article_id" element={<SingleArticle />} />
+        <Route path="/articles/:topic/:article_id" element={<SingleArticle user={user}/>} />
       </Routes>
     </>
   )
