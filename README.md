@@ -13,10 +13,10 @@ Click this link to view NC News
     - Node.js version 20.5.0
 
 ## Installation
-First complete the all steps in the NC News Backend repo
+First complete the all steps in the NC News Backend repo located here => {https://github.com/lukepeteers/nc-news-BE}
 All instructions must be typed into an instance of Linux command line
 
-    1. First clone the repo using `git clone https://github.com/lukepeteers/nc-news-BE.git`
-    2. Move into your cloned repo using `cd nc-news-BE`
+    1. First clone the repo using `git clone https://github.com/lukepeteers/nc-news-FE.git`
+    2. Move into your cloned repo using `cd nc-news-FE`
     3. Use `npm install` to install dependencies
     4. Then type `npm run dev` to host the server locally
